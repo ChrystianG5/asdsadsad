@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Tools DBU Made By Sumet", "DarkTheme")
+local Window = Library.CreateLib("Tools DBU Made By Sumet", "BloodTheme")
 local Tab = Window:NewTab("Earth")
 
 local CoreGui = game:GetService("StarterGui")
@@ -982,3 +982,16 @@ Section:NewButton("Earth TP","Te lleva a la Tierra",function()
 	game:GetService("ReplicatedStorage").Package.Events.TP:InvokeServer(unpack(args))
 	
 end)
+local xd = Window:NewTab("Settings")
+local Section = xd:NewSection("Script Settings")
+Section:NewKeybind("Tecla para cerrar", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+local Section = xd:NewSection("Credits")
+Section:NewKeybind("51Sumet", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:Destroy()
+end)
+
+
+
+
