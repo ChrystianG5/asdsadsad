@@ -6,12 +6,7 @@ local Character = Player.Character or Player:WaitForChild("Character")
 local PlayeGui = Player.PlayerGui
 local Starter = PlayeGui:FindFirstChild("Start")
 
-if Starter then
-	game.ReplicatedStorage.Package.Events.Start:InvokeServer()
-	Character.Humanoid.Health = 0
-	
-else return
-end 
+
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
@@ -1005,3 +1000,9 @@ end)
 
 
 
+if Starter then
+	game.ReplicatedStorage.Package.Events.Start:InvokeServer()
+	Character.Humanoid.Health = 0
+	
+else return
+end 
