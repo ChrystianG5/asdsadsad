@@ -1,7 +1,17 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Tools DBU Made By Sumet", "BloodTheme")
 local Tab = Window:NewTab("Earth")
+local Player = game.Players.LocalPlayer
+local Character = Player.Character or Player:WaitForChild("Character")
+local PlayeGui = Player.PlayerGui
+local Starter = PlayeGui:FindFirstChild("Start")
 
+if Starter then
+	game.ReplicatedStorage.Package.Events.Start:InvokeServer()
+	Character.Humanoid.Health = 0
+	
+else return
+end 
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
@@ -400,7 +410,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/HimikoToga1474/Ahegao
 end)
 
 Section:NewButton("TP Player","Te tepea a un jugador ",function()
-print("a")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CrisDevJS/asdsadsad/main/dd"))()
 end)
 
 
@@ -904,10 +914,10 @@ nextb = Instance.new("TextButton", gui)
 nextb.Position = UDim2.new(0.88,0,0.9,0)
 nextb.Size = UDim2.new(0.1,0,0.07,0)
 nextb.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
-nextb.Text = "Next"
+nextb.Text = "Siguiente"
 prevb = nextb:Clone()
 prevb.Position = UDim2.new(0.02,0,0.9,0)
-prevb.Text = "Previous"
+prevb.Text = "Atras"
 prevb.Parent = gui
 plrNum = 1
 for i,v in pairs(game.Players:GetPlayers()) do
