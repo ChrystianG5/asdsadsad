@@ -2,7 +2,19 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("Tools DBU Made By Sumet", "DarkTheme")
 local Tab = Window:NewTab("Earth")
 
+local CoreGui = game:GetService("StarterGui")
 
+CoreGui:SetCore("SendNotification", {
+    Title = "Script Made By",
+    Text = "51Sumet",
+    Duration = 5.5,
+})
+wait (2) 
+CoreGui:SetCore("SendNotification", {
+    Title = "No difundir",
+    Text = "Hdp",
+    Duration = 2.5,
+})
 
 
 
