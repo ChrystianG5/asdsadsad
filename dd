@@ -474,7 +474,7 @@ end
 
 end)
 Section:NewButton("Melees Farm (GOOD)","Te tepea a un jugador ",function()
- while true do
+while true do
 
 local A_1 = "\77\97\99\104\32\75\105\99\107"
 local A_2 = "\66\108\97\99\107\110\119\104\105\116\101\50\55"
@@ -530,11 +530,11 @@ local args = {
 
 game:GetService("ReplicatedStorage").Package.Events.Hak:InvokeServer(unpack(args))
 
+
 wait() 
 end
  
 end)
-
 Section:NewButton("Auto Charge","Recarga KI Automaticamente ",function()
 
   while true do
